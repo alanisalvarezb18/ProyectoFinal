@@ -21,6 +21,7 @@ public class GUIInicio extends javax.swing.JFrame {
         initComponents();
         setVisible(true);
         escuchar(controladorPrincipal);
+        inivisible();
     }
 
     private void escuchar(ActionListener controladorPrincipal) {
@@ -34,6 +35,48 @@ public class GUIInicio extends javax.swing.JFrame {
         this.BotonRojo.addActionListener(controladorPrincipal);
     }
 
+      private void inivisible() {
+          
+          this.BTNJugar.setOpaque(false);
+        this.BTNJugar.setContentAreaFilled(false);
+        this.BTNJugar.setBorderPainted(false);
+        this.BTNJugar.setFocusPainted(false);
+        
+        this.BTNHistoria.setOpaque(false);
+        this.BTNHistoria.setContentAreaFilled(false);
+        this.BTNHistoria.setBorderPainted(false);
+        this.BTNHistoria.setFocusPainted(false);
+        
+        this.BTNCreditos.setOpaque(false);
+        this.BTNCreditos.setContentAreaFilled(false);
+        this.BTNCreditos.setBorderPainted(false);
+        this.BTNCreditos.setFocusPainted(false);
+        
+        this.Instrucciones.setOpaque(false);
+        this.Instrucciones.setContentAreaFilled(false);
+        this.Instrucciones.setBorderPainted(false);
+        this.Instrucciones.setFocusPainted(false);
+        
+        this.BotonAmarillo.setOpaque(false);
+        this.BotonAmarillo.setContentAreaFilled(false);
+        this.BotonAmarillo.setBorderPainted(false);
+        this.BotonAmarillo.setFocusPainted(false);
+
+        this.BOTNVERDE.setOpaque(false);
+        this.BOTNVERDE.setContentAreaFilled(false);
+        this.BOTNVERDE.setBorderPainted(false);
+        this.BOTNVERDE.setFocusPainted(false);
+        
+        this.BotonAzul.setOpaque(false);
+        this.BotonAzul.setContentAreaFilled(false);
+        this.BotonAzul.setBorderPainted(false);
+        this.BotonAzul.setFocusPainted(false);
+        
+        this.BotonRojo.setOpaque(false);
+        this.BotonRojo.setContentAreaFilled(false);
+        this.BotonRojo.setBorderPainted(false);
+        this.BotonRojo.setFocusPainted(false);
+    }
     public String getBtnPlay() {
         return this.BTNJugar.getActionCommand();
     }
@@ -49,20 +92,24 @@ public class GUIInicio extends javax.swing.JFrame {
     public String getBtnInstrucciones() {
         return this.Instrucciones.getActionCommand();
     }
-    
+
     public String getColorAzul() {
         return this.BotonAzul.getActionCommand();
     }
 
-    public String getColorAmarillo(){
-    return this.BotonAmarillo.getActionCommand();}
-    
-    public String getColorVerde(){
-    return this.BOTNVERDE.getActionCommand();}
-    
-    public String getColorRojo(){
-    return this.BotonRojo.getActionCommand();}
-    
+    public String getColorAmarillo() {
+        return this.BotonAmarillo.getActionCommand();
+    }
+
+    public String getColorVerde() {
+        return this.BOTNVERDE.getActionCommand();
+    }
+
+    public String getColorRojo() {
+        return this.BotonRojo.getActionCommand();
+    }
+
+  
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -94,6 +141,7 @@ public class GUIInicio extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BTNJugar.setForeground(new java.awt.Color(255, 255, 255));
         BTNJugar.setText("JUGAR");
         BTNJugar.setActionCommand("BtnJugar");
         BTNJugar.addActionListener(new java.awt.event.ActionListener() {
@@ -103,6 +151,7 @@ public class GUIInicio extends javax.swing.JFrame {
         });
         getContentPane().add(BTNJugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 50, 90, 70));
 
+        BTNHistoria.setForeground(new java.awt.Color(255, 255, 255));
         BTNHistoria.setText("Historia");
         BTNHistoria.setActionCommand("BTNHISTORIA");
         BTNHistoria.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +161,7 @@ public class GUIInicio extends javax.swing.JFrame {
         });
         getContentPane().add(BTNHistoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 90, 70));
 
+        Instrucciones.setForeground(new java.awt.Color(255, 255, 255));
         Instrucciones.setText("Instrucciones");
         Instrucciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,9 +170,11 @@ public class GUIInicio extends javax.swing.JFrame {
         });
         getContentPane().add(Instrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 90, 60));
 
+        BTNCreditos.setForeground(new java.awt.Color(255, 255, 255));
         BTNCreditos.setText("Creditos");
         getContentPane().add(BTNCreditos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 90, 70));
 
+        BotonAzul.setForeground(new java.awt.Color(255, 255, 255));
         BotonAzul.setText("Azul");
         BotonAzul.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,9 +183,11 @@ public class GUIInicio extends javax.swing.JFrame {
         });
         getContentPane().add(BotonAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 80, 80));
 
+        BOTNVERDE.setForeground(new java.awt.Color(255, 255, 255));
         BOTNVERDE.setText("Verde");
         getContentPane().add(BOTNVERDE, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 80, 80));
 
+        BotonAmarillo.setForeground(new java.awt.Color(255, 255, 255));
         BotonAmarillo.setText("Amarillo");
         BotonAmarillo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,11 +196,12 @@ public class GUIInicio extends javax.swing.JFrame {
         });
         getContentPane().add(BotonAmarillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 80, 80));
 
+        BotonRojo.setForeground(new java.awt.Color(255, 255, 255));
         BotonRojo.setText("Rojo");
         getContentPane().add(BotonRojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 80, 80));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WhatsApp Image 2025-10-16 at 4.00.22 PM-convertido-a-mediano.jpeg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 470));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,7 +214,7 @@ public class GUIInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_InstruccionesActionPerformed
 
     private void BotonAmarilloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAmarilloActionPerformed
-        // TODO add your handling code here:
+// TODO add your handling code here:
     }//GEN-LAST:event_BotonAmarilloActionPerformed
 
     private void BTNHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNHistoriaActionPerformed
